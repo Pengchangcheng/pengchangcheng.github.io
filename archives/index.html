@@ -40,12 +40,6 @@
 
   <script src="/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
-  
   <!-- analytics -->
   
 
@@ -69,24 +63,6 @@
 		  <li>
 			<a href="/archives" title="All the articles.">
 			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
 			</a>
 		  </li>
 		  
@@ -151,6 +127,18 @@
 
 
 		
+			
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-github"></i><a href="WWW" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
+	
+	</ul>
+</div>
+
+
+		
 	</div> <!-- sidebar -->
 </div> <!-- col-md-3 -->
 
@@ -202,22 +190,6 @@
 
 
 <!-- syntax highlighting -->
-
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
 
 </body>
