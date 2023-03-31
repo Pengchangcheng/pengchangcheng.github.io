@@ -1,128 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Github Pages</title>
-    <style>
-        /* 相册样式 */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-        .gallery img {
-            width: 200px;
-            height: 150px;
-            margin: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform .3s ease-out;
-        }
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
+  <title>v我50</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
 
-        /* 音乐播放器样式 */
-        .audio-player {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-        }
-        .audio-player audio {
-            width: 300px;
-        }
-
-        /* 动画效果 */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes slideInLeft {
-            from {
-                transform: translateX(-100%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
-        @keyframes slideInRight {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
-        .animated {
-            animation-duration: 1s;
-            animation-fill-mode: both;
-        }
-        .fadeIn {
-            animation-name: fadeIn;
-        }
-        .slideInLeft {
-            animation-name: slideInLeft;
-        }
-        .slideInRight {
-            animation-name: slideInRight;
-        }
-    </style>
+    .container img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="gallery animated fadeIn">
-        <img src="https://picsum.photos/200/150" alt="Gallery Image 1">
-        <img src="https://picsum.photos/200/151" alt="Gallery Image 2">
-        <img src="https://picsum.photos/200/152" alt="Gallery Image 3">
-        <img src="https://picsum.photos/200/153" alt="Gallery Image 4">
-        <img src="https://picsum.photos/200/154" alt="Gallery Image 5">
-        <img src="https://picsum.photos/200/155" alt="Gallery Image 6">
-    </div>
-
-    <!-- <div class="audio-player animated slideInLeft">
-        <audio controls>
-            <source src="http://www.auby.no/files/music.ogg" type="audio/ogg">
-            <source src="http://www.auby.no/files/music.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div> -->
-
-    <script>
-        /* 动画触发器 */
-        function isVisible(element) {
-            const rect = element.getBoundingClientRect();
-            const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-            const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-
-            // 检查是否在视口内
-            const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-            const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-
-            return (vertInView && horInView);
-        }
-
-        function triggerAnimations() {
-            const items = document.querySelectorAll('.animated');
-            items.forEach((item) => {
-                if (isVisible(item)) {
-                    item.style.visibility = 'visible';
-                }
-            });
-        }
-
-        // 滚动时触发动画
-        window.addEventListener('scroll', triggerAnimations);
-
-        // 初始化触发动画
-        triggerAnimations();
-    </script>
+  <div class="container">
+    <img src="https://img9.doubanio.com/view/richtext/large/public/p430015764.jpg">
+  </div>
 </body>
 </html>
