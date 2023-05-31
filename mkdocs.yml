@@ -2,7 +2,6 @@ site_name: Pixixi
 site_url: https://50kfc.com
 site_author: pengchangcheng
 site_description: "whatever"
-repo_url: "https://github.com/pengchangcheng"
 copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
 
 site_name: Pixixi
@@ -12,5 +11,3 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-extra_file:
-  - CNAME
