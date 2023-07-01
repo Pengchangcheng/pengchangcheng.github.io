@@ -3,15 +3,23 @@
 
 <head>
   <title>50KFC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .container {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
     }
 
-    .left {
-      flex: 1;
-      padding: 20px;
+    @media (max-width: 768px) {
+      .item {
+        width: 100%;
+      }
+    }
+
+    .item {
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     .text {
@@ -29,22 +37,17 @@
     .text strong {
       color: #666;
     }
-
-    .right {
-      flex: 1;
-      padding: 20px;
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="left">
+    <div class="item">
       <div class="text">
         已知三角形△ABC AB=25 AC=18 sin∠BAC=0.2 过AB中点K 作KF⊥AB交AC于F ，连接中点K及三角形顶点C，得三角形KFC，求证KFC=50
       </div>
     </div>
-    <div class="right">
+    <div class="item">
       <img src="images/kfc-1.jpg" alt="50KFC">
     </div>
   </div>
